@@ -2,36 +2,33 @@
 
 import { useEffect, useState } from "react";
 
+// Photographs documented by their contributors as scenes in Nairobi, Kenya.
+// Each image depicts Kenyan/African people rather than generic stock subjects.
 const scenes = [
   {
-    image: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=90",
-    label: "LANDSCAPES & OPEN COUNTRY",
-    alt: "Wide African landscape"
+    image: "https://images.unsplash.com/photo-1656068218535-85db26125e13?auto=format&fit=crop&w=1800&q=85",
+    label: "NAIROBI STREET LIFE",
+    alt: "People crossing a busy street in Nairobi, Kenya"
   },
   {
-    image: "https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=90",
-    label: "CITIES & EVERYDAY LIFE",
-    alt: "Urban scene in Africa"
+    image: "https://images.unsplash.com/photo-1770283556599-9ce7898ffbd1?auto=format&fit=crop&w=1800&q=85",
+    label: "CREATIVE ENTERPRISE",
+    alt: "Young Kenyan creatives in a Nairobi apparel district store"
   },
   {
-    image: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1800&q=90",
-    label: "URBAN AFRICA",
-    alt: "African cityscape"
+    image: "https://images.unsplash.com/photo-1693432396195-75261a69ab49?auto=format&fit=crop&w=1800&q=85",
+    label: "STREET STYLE",
+    alt: "Two African men in contemporary street fashion"
   },
   {
-    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=90",
-    label: "WILDLIFE & WILDERNESS",
-    alt: "African wildlife in its natural setting"
+    image: "https://images.unsplash.com/photo-1773864931052-ea56474bcc84?auto=format&fit=crop&w=1800&q=85",
+    label: "AFRICAN FASHION",
+    alt: "Two Kenyan women among clothing racks in a Nairobi fashion space"
   },
   {
-    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=90",
-    label: "WORK & ENTERPRISE",
-    alt: "People collaborating at work"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1800&q=90",
-    label: "ART & CULTURE",
-    alt: "Contemporary art and cultural event"
+    image: "https://images.unsplash.com/photo-1776781205743-33b4c1106adc?auto=format&fit=crop&w=1800&q=85",
+    label: "PEOPLE & PERSPECTIVES",
+    alt: "Portrait of a young Kenyan man"
   }
 ];
 

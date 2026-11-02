@@ -77,9 +77,7 @@ export default function Home() {
       </section>
 
       <section className="lead-story" aria-label="Featured story">
-        <div className="lead-image">
-          <div className="image-caption">NAIROBI, KENYA &nbsp; / &nbsp; A CONTINENT IN MOTION</div>
-        </div>
+        <RotatingLeadImage />
         <div className="lead-copy">
           <div className="story-meta"><span className="category">THE BIG READ</span><span>01 — 08</span></div>
           <h2>The future is not<br />a place we arrive at.<br /><em>It is one we make.</em></h2>

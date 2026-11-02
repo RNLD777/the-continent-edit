@@ -6,7 +6,7 @@ const stories = [
     date: "Field Notes · 6 min read",
     title: "The new language of African design",
     excerpt: "A generation of creatives is drawing from local memory while refusing to be confined by it.",
-    image: "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1200&q=85",
+    image: "https://images.unsplash.com/photo-1773864931052-ea56474bcc84?auto=format&fit=crop&w=1200&q=85",
     alt: "Contemporary art installation with sculptural forms",
     number: "01"
   },
@@ -15,7 +15,7 @@ const stories = [
     date: "The Brief · 4 min read",
     title: "Building businesses for the markets we actually have",
     excerpt: "The most interesting ideas may not be imported. They may be hiding in plain sight.",
-    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85",
+    image: "https://images.unsplash.com/photo-1770283556599-9ce7898ffbd1?auto=format&fit=crop&w=1000&q=85",
     alt: "Entrepreneurs working together around a table",
     number: "02"
   },
@@ -24,7 +24,7 @@ const stories = [
     date: "Opinion · 7 min read",
     title: "Beyond the headlines: who gets to tell Africa’s story?",
     excerpt: "Representation is not only about who appears in the frame. It is also about who holds the camera.",
-    image: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1000&q=85",
+    image: "https://images.unsplash.com/photo-1656068218535-85db26125e13?auto=format&fit=crop&w=1000&q=85",
     alt: "A view across an African city",
     number: "03"
   }

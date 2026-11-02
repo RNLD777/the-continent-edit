@@ -1,4 +1,4 @@
-const stories = [
+import RotatingLeadImage from "./RotatingLeadImage";\n\nconst stories = [
   {
     category: "Culture",
     date: "Field Notes · 6 min read",

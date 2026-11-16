@@ -177,3 +177,48 @@ a { color: inherit; text-decoration: none; }
   .article-body p { font-size: 16px; line-height: 1.8; }
   .article-end { align-items: flex-start; flex-direction: column; }
 }
+
+
+/* Full editorial section archives */
+.section-header{min-height:104px;padding:17px 5.2%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:30px}
+.section-intro{padding:78px 8.2% 42px}
+.section-intro h1{font:500 clamp(64px,10vw,132px)/.92 var(--serif);letter-spacing:-.075em;margin:27px 0 15px}
+.section-intro h1 em{color:var(--wine);font-weight:500}
+.section-intro>p:not(.eyebrow){max-width:570px;color:var(--muted);font:18px/1.6 var(--serif);margin:0}
+.section-intro-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);margin-top:42px;padding-top:14px;color:var(--muted);font-size:8px;letter-spacing:.14em}
+.section-archive{padding:38px 8.2% 100px}
+.archive-heading{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:28px}
+.archive-heading>span{font-size:8px;letter-spacing:.14em;color:var(--muted)}
+.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:25px;row-gap:55px}
+.archive-image{height:clamp(190px,23vw,310px);display:block;position:relative;overflow:hidden;background:linear-gradient(135deg,#ded5c7,#b9aa97);background-position:center;background-size:cover}
+.archive-image.no-image:after{content:"THE CONTINENT EDIT";position:absolute;left:18px;bottom:18px;color:rgba(255,255,255,.8);font:italic 22px var(--serif)}
+.archive-image .story-number{top:14px;left:15px}
+.archive-image .image-arrow{bottom:12px;right:15px}
+.archive-card h2{font:500 clamp(21px,2vw,28px)/1.18 var(--serif);letter-spacing:-.025em;margin:13px 0 9px}
+.archive-card h2 a:hover{color:var(--wine)}
+.archive-card>p{color:var(--muted);font-size:11px;line-height:1.7;margin:0;max-width:370px}
+.archive-read{display:inline-block;margin-top:17px;padding-bottom:7px;border-bottom:1px solid var(--line);font-size:8px;font-weight:700;letter-spacing:.13em}
+.section-empty{padding:65px 8.2% 110px}
+.section-empty h2{font:500 38px var(--serif)}
+.section-empty p{color:var(--muted);font-size:12px}
+.section-more{padding:35px 8.2% 55px;border-top:1px solid var(--line)}
+.section-more>div{display:flex;flex-wrap:wrap;gap:14px 35px;margin-top:20px}
+.section-more>div a{font:500 20px var(--serif)}
+@media(max-width:760px){
+ .section-header{min-height:78px;padding:13px 5%;flex-wrap:wrap;gap:12px}
+ .section-header .wordmark{width:150px}
+ .section-header .wordmark strong{font-size:21px}
+ .section-header .desktop-nav{order:3;width:100%;overflow-x:auto;gap:23px;padding:10px 0 3px;scrollbar-width:none}
+ .section-header .desktop-nav::-webkit-scrollbar{display:none}
+ .section-header .desktop-nav a{white-space:nowrap;font-size:9px}
+ .section-intro{padding:52px 6% 32px}
+ .section-intro h1{font-size:clamp(61px,15vw,100px)}
+ .section-intro>p:not(.eyebrow){font-size:16px}
+ .section-intro-bottom{font-size:7px;flex-wrap:wrap;margin-top:30px}
+ .section-archive{padding:28px 6% 70px}
+ .archive-grid{grid-template-columns:1fr;row-gap:38px}
+ .archive-image{height:65vw;max-height:370px}
+ .archive-card h2{font-size:26px}
+ .section-more{padding:30px 6% 45px}
+ .section-more>div a{font-size:18px}
+}

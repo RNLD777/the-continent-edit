@@ -28,11 +28,11 @@ export default function Home() {
           <span className="wordmark-bottom">EDIT <i>—</i> JOURNAL</span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#latest">Latest</a>
-          <a href="#culture">Culture</a>
-          <a href="#business">Business</a>
-          <a href="#perspectives">Perspectives</a>
-          <a href="#the-world">The World</a>
+          <a href="/latest">Latest</a>
+          <a href="/culture">Culture</a>
+          <a href="/business">Business</a>
+          <a href="/perspectives">Perspectives</a>
+          <a href="/the-world">The World</a>
         </nav>
         <a className="subscribe-link" href="#newsletter">The Sunday Edit <Arrow /></a>
       </header>
@@ -65,11 +65,11 @@ export default function Home() {
       <section className="latest-section" id="latest">
         <div className="section-heading">
           <div><p className="eyebrow">THE EDITOR&apos;S SELECTION</p><h2>Worth your <em>attention.</em></h2></div>
-          <a href="#the-brief" className="text-link">VIEW ALL STORIES <Arrow /></a>
+          <a href="/latest" className="text-link">VIEW ALL STORIES <Arrow /></a>
         </div>
         <div className="story-grid">
           {stories.map((story) => (
-            <article className="story-card" key={story.slug} id={story.category.toLowerCase()}>
+            <article className="story-card" key={story.slug}>
               <a className="story-image" href={`/stories/${story.slug}`} style={{ backgroundImage: `url("${story.image}")` }} aria-label={`Read: ${story.title}`}>
                 <span className="story-number">{story.slug === "the-new-language-of-african-design" ? "01" : story.slug === "building-businesses-for-the-markets-we-have" ? "02" : "03"}</span>
                 <span className="image-arrow"><Arrow /></span>
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
         <div className="brief-list">
           {briefs.map((brief, index) => (
-            <a href={`/stories/${brief.slug}`} className="brief-item" key={brief.slug} id={brief.category === "The World" ? "the-world" : undefined}>
+            <a href={`/stories/${brief.slug}`} className="brief-item" key={brief.slug}>
               <span className="brief-index">0{index + 1}</span>
               <span className="brief-content"><span className="category">{brief.category}</span><strong>{brief.title}</strong></span>
               <span className="brief-time">{brief.readTime}</span>

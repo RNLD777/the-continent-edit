@@ -1,14 +1,22 @@
 # The Continent Edit
 
-An independent editorial publication exploring the people, ideas and shifts shaping contemporary Africa.
+An independent editorial publication concept exploring the people, ideas and shifts shaping contemporary Africa.
 
 **Editorial line:** Africa, in perspective.
 
 ## Stack
-- Next.js App Router
+- Next.js App Router with static export
 - React
 - TypeScript
-- Custom CSS design system
+- Custom responsive CSS
+
+## Current experience
+- Responsive editorial homepage with masthead, lead feature, editor's selection, short-form brief and publication statement.
+- Eight individual editorial story pages with direct URLs, page metadata, and links back to the homepage.
+- Homepage navigation anchors for Latest, Culture, Business, Perspectives and The World.
+- Lead feature, story cards and brief headlines open their corresponding article pages.
+- Reduced-motion support for the rotating lead image.
+- Newsletter area clearly marked as coming soon; it does not collect or send email addresses.
 
 ## Local development
 ```bash
@@ -16,18 +24,13 @@ npm install
 npm run dev
 ```
 
-## Current build
-The first milestone is the responsive editorial homepage: publication masthead, lead feature, editor's selection, short-form brief, editorial statement and newsletter preview.
-
 ## Deployment
+The project is connected to Cloudflare Pages (`the-continent-edit.pages.dev`) from the `main` branch. It uses Next.js static export (`out`).
 
-The project is connected to Cloudflare Pages (`the-continent-edit.pages.dev`) from the `main` branch. The site uses Next.js static export (`out`) for Pages hosting.
+## Not connected yet
+- Newsletter provider or subscriber storage.
+- CMS, editorial publishing workflow, search, analytics or social-sharing integrations.
+- Category archive pages; the current category navigation jumps to the relevant homepage selection.
+- Production editorial verification and image licensing.
 
-## Next milestones
-1. Add real article routes and a structured content model.
-2. Build category landing pages and search.
-3. Connect a CMS and newsletter provider.
-4. Add analytics, SEO and social sharing.
-5. Complete the Cloudflare Pages deployment and configure a production domain.
-
-Editorial copy and imagery currently serve as demonstration content and should be fact-checked/licensed or replaced before public launch.
+The articles and imagery are demonstration content for this portfolio project. They should be fact-checked, edited and appropriately licensed before being presented as live journalism.
